@@ -30,17 +30,13 @@ const employeeRecords = [
 
 // Function under test
 function filterPrivateData(employees) {
-  return employees.map(({ name, occupation, email }) => {
-    return { name, occupation, email }; // object literal shorthand
-  });
+  return employees.map(({ name, occupation, email }) => ({name, occupation, email})); // object literal shorthand
 }
-
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('Test 1: filterPrivateData should take one parameter');
   console.assert(filterPrivateData.length === 1);
 }
-
 function test2() {
   console.log('Test 2: gender and salary should be filtered out');
   const expected = [
