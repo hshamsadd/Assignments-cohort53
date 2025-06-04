@@ -32,7 +32,7 @@ function calculateTotalPrice(partyItems) {
   for (let price of Object.values(partyItems)) {
     total += price;
   }
-  return `Total: €${total}.`;
+  return `Total: €${total.toFixed(2)}.`;
 }
 
 // ✅ Test 1: Function should take one parameter
