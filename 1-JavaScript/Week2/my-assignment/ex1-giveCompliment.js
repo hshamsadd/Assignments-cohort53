@@ -3,7 +3,6 @@ export function giveCompliment(name) {
   const randomIndex = Math.floor(Math.random() * compliments.length);
   const randomCompliment = compliments[randomIndex];
   return `You are ${randomCompliment}, ${name}!`;
-
 }
 
 function main() {
