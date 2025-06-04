@@ -28,10 +28,7 @@ const cartForParty = {
 };
 
 function calculateTotalPrice(partyItems) {
-  let total = 0;
-  for (let price of Object.values(partyItems)) {
-    total += price;
-  }
+const total = Object.keys(cartForParty).reduce((sum, key) => sum += cartForParty[key], 0)
   return `Total: €${total.toFixed(2)}.`;
 }
 
