@@ -7,7 +7,7 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
    `list-item`.
 3. Look in the css file!
 ------------------------------------------------------------------------------*/
-document.getElementById('nickname').textContent = 'Zain';
+document.getElementById('nickname').textContent = 'Jack';
 document.getElementById('fav-food').textContent = 'Kebab';
 document.getElementById('hometown').textContent = "Sana'a";
 

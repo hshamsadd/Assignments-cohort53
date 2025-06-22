@@ -20,8 +20,6 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
-const cat = document.querySelector('img');
-cat.style.left = '0px';
 const walkingCatURL = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
 const dancingCatURL =
   'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
@@ -29,6 +27,9 @@ let isDancing = false;
 let walkInterval;
 
 function catWalk() {
+  const cat = document.querySelector('img');
+  cat.style.left = '0px';
+
   const currentLeft = parseInt(cat.style.left);
   const newLeft = currentLeft + 10;
   cat.style.left = newLeft + 'px';
@@ -51,4 +52,8 @@ function catWalk() {
   }
 }
 
-walkInterval = setInterval(catWalk, 50);
+window.addEventListener('DOMContentLoaded', () => {
+  const cat = document.querySelector('img');
+  cat.style.left = '0px';
+  walkInterval = setInterval(catWalk, 50);
+});
