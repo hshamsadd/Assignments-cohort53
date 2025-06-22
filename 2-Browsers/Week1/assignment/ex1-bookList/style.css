@@ -1,1 +1,20 @@
 /* Write your style here */
+
+li {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 380px;
+  margin: 8px;
+  padding: 8px;
+}
+
+body {
+  display: block;
+}
+
+img {
+  object-fit: cover;
+  width: 350px;
+  height: 500px;
+}
